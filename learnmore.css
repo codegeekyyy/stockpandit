@@ -1,0 +1,207 @@
+
+/* Reset and Font Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Color Variables */
+  :root {
+    --primary-black: #1a1a1a; /* Dark black for background */
+    --secondary-green: #27ae60; /* Vibrant green for accents */
+    --text-light: #ffffff; /* Light text color */
+    --text-gray: #b0b0b0; /* Muted gray for secondary text */
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: var(--primary-black);
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: var(--secondary-green);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo a {
+    font-size: 1.8rem;
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header .logo .highlight {
+    color: #ffffff;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: var(--primary-black);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Content Section */
+  .content-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .content-section h2 {
+    color: var(--secondary-green);
+    margin-bottom: 15px;
+  }
+  
+  .content-section p {
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .content-section .btn {
+    padding: 10px 20px;
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .content-section .btn:hover {
+    background-color: #1f8f4b;
+    color: var(--text-light);
+  }
+  
+  /* Learn More Features Section */
+  .features-section {
+    padding: 60px 20px;
+    background-color: #222;
+  }
+  
+  .features-section h2 {
+    color: var(--secondary-green);
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    color: var(--text-light);
+  }
+  
+  .feature-card h3 {
+    margin: 10px 0;
+  }
+  
+  .feature-card p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+  }
+  
+  .feature-card:hover {
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+  }
+  
+  .cta-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cta-section .btn {
+    padding: 10px 20px;
+    background-color: var(--primary-black);
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .cta-section .btn:hover {
+    background-color: #1f8f4b;
+    color: var(--primary-black);
+  }
+  
+  /* Footer Styling */
+  footer {
+    padding: 20px;
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+    text-align: center;
+  }
+  
+  footer .footer-links a {
+    color: var(--primary-black);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,139 @@
+/* Reset and Font Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Color Variables */
+:root {
+    --primary-black: #1a1a1a;
+    --secondary-green: #27ae60;
+    --text-light: #ffffff;
+    --text-gray: #b0b0b0;
+}
+
+/* Body Styling */
+body {
+    background-color: var(--primary-black);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background-color: var(--secondary-green);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .logo .highlight {
+    color: #ffffff;
+}
+
+/* Login Section Styling */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.login-form-container {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-form-container h2 {
+    color: var(--secondary-green);
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: var(--text-light);
+    border: 1px solid var(--secondary-green);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+/* Input Focus and Hover */
+.login-form input:focus {
+    border-color: #1f8f4b;
+}
+
+.login-form input:hover {
+    border-color: #1f8f4b;
+}
+
+/* Button Styling */
+.login-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #1f8f4b;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.signup-link a {
+    color: var(--secondary-green);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #1f8f4b;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Prediction - StockPandit</title>
+  <link rel="stylesheet" href="prediciton.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="#">Stock<span class="highlight">Pandit</span></a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="market-trend.html">Market Trends</a></li>
+        <li><a href="stock-analysis.html">Stock Analysis</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Prediction Section -->
+  <section class="prediction-section">
+    <h2>Stock Price Prediction</h2>
+    <div class="prediction-form">
+      <input type="text" class="stock-input" placeholder="Enter stock symbol">
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" class="date-input">
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" class="date-input">
+      <button class="primary-btn">Predict</button>
+    </div>
+
+    <!-- Prediction Results -->
+    <div class="prediction-results">
+      <h3>Predicted Results</h3>
+      <div class="result-card">
+        <div class="result-title">Predicted Price on End Date</div>
+        <div id="predicted-price" class="result-value">$0.00</div>
+      </div>
+      <div class="result-card">
+        <div class="result-title">Timestamp</div>
+        <div id="timestamp" class="result-value">N/A</div>
+      </div>
+      <div class="result-card">
+        <div class="result-title">Projected Trend</div>
+        <div id="trend" class="result-value">N/A</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="social-icons">
+      <!-- Add social media icons if needed -->
+    </div>
+  </footer>
+  <script src="prediction.js" defer></script>
+</body>
+</html>
